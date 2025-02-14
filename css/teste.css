@@ -1,0 +1,84 @@
+/* Remova ou ajuste o height: 100vh do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aed76872;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    /* Se quiser manter o centrado horizontal, mas não forçar altura fixa, use: */
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  <-- Se tiver muuitos campos, melhor remover ou ajustar */
+    min-height: 100vh; /* em vez de height: 100vh */
+  }
+  
+  /* Em vez de estilizar todo div, use uma classe específica */
+  .form-container {
+    background-color: #8FB18E;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+    /* Largura fixa, mas com limite de 100% em telas pequenas */
+    width: 320px;
+    max-width: 100%;
+  
+    /* Limite de altura + rolagem interna */
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  h1 {
+    color: #D53302;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #8FB18E;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="password"]:focus {
+    border-color: #D53302;
+    outline: none;
+  }
+  
+  form input[type="text"]::placeholder,
+  form input[type="password"]::placeholder {
+    color: #8FB18E;
+  }
+  
+  form button {
+    background-color: #D53302;
+    color: #FFFFFF;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #FCC560;
+  }
+  
+  form button:active {
+    background-color: #D53302;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,82 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aed76872;
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Adiciona espaço ao redor em telas pequenas */
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; /* Permite que o body cresça verticalmente */
+    align-items: flex-start; /* Alinha o topo para evitar overflow */
+  }
+  
+  div {
+    background-color: #8FB18E;
+    padding: 25px; /* Reduzido para ganhar espaço vertical */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    margin: 20px 0; /* Espaço acima/abaixo quando necessário */
+    max-height: 90vh; /* Limita altura à janela visível */
+    overflow-y: auto; /* Adiciona scroll interno se necessário */
+  }
+  
+  h1 {
+    color: #D53302;
+    font-size: 24px; /* Tamanho ligeiramente menor */
+    margin: 15px 0; /* Espaço mais compacto */
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"], /* Adicione outros tipos se necessário */
+  form input[type="tel"] {
+    width: 100%;
+    padding: 10px; /* Reduzido para ganhar espaço */
+    margin: 8px 0; /* Margem entre inputs reduzida */
+    border: 2px solid #8FB18E;
+    border-radius: 8px;
+    font-size: 14px; /* Fonte um pouco menor */
+    background-color: #FFFFFF;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para a tag select */
+  form select {
+    width: 100%;
+    padding: 10px; /* Igual aos inputs para consistência */
+    margin: 8px 0; /* Mesma margem dos inputs */
+    border: 2px solid #8FB18E;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #D53302;
+    color: #FFFFFF;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #FCC560;
+  }
+  
+  form button:active {
+    background-color: #D53302;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
